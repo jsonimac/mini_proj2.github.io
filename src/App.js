@@ -1,27 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import Movies from './components/Movies';
+import Footer from './components/Footer';
 function App() {
   return (
-    <div className="App">
-      <div>Guys Pwedi Nang Magamit ang Bootstrap sa Ating Project Na Install kona</div>
-        <div className='btn btn-outline-primary'>Added Bootstrap</div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="btn btn-outline-info"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/movies' element={<Movies />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      <Footer />
+    </>
+    
   );
 }
 

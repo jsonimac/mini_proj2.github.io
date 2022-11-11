@@ -1,5 +1,10 @@
 .nav-shadow{
 	box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
+	
+}
+.nav-style{
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(20px);
 }
 .nav-col{
 	background: #f2f2f2;

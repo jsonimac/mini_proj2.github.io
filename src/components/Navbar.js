@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <>
-            <nav className="nav-col navigation navbar navbar-expand-lg sticky-top p-0 nav-shadow">
+            <nav className="nav-col navigation navbar navbar-expand-lg sticky-top p-0 nav-shadow nav-style">
                 <div className="container-fluid">
                     <span className="my-2">
                         <img style={{height: "70px", width: "140px"}}  src={"cornflix.jpg"} alt="Logo"/>
@@ -29,12 +29,12 @@ function Navbar() {
                                 <Link className="nav-link" to={'/about'}>About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to={'/fqas'}>FAQs</Link>
+                                <Link className="nav-link" to={'/faqs'}>FAQs</Link>
                             </li>
                         </ul>
                         <div className="d-flex">
-                            <button>click</button>
-                            <button>click</button>
+                            <button className="">click</button>
+                            <button className="">click</button>
                         </div>
                     </div>
                 </div>

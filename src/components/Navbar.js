@@ -29,7 +29,7 @@ function Navbar() {
                                 <Link className="nav-link" to={'/about'}>About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to={'/fqas'}>FAQs</Link>
+                                <Link className="nav-link" to={'/faqs'}>FAQs</Link>
                             </li>
                         </ul>
                         <div className="d-flex">

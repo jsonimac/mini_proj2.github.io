@@ -1,7 +1,9 @@
+import MovieList from "./moviesComponents/MovieList";
+
 function Movies() {
     return (
         <div className="container">
-            <h2>This is Movie List</h2>
+            <MovieList/>
         </div>
     );
 }

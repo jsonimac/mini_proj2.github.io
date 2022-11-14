@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import parse from 'html-react-parser';
 
 function MovieList() {
     const [movies, setMovies] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         getMovieList();
     },[])
 
@@ -17,6 +18,7 @@ function MovieList() {
             console.log(err.message);
         })
     }
+
     return (
         <>
             <h5>Movie List</h5>
@@ -28,6 +30,7 @@ function MovieList() {
                         <strong>{item.category}</strong>
                         <p>{item.summary}</p>
                         <div>{item.year}</div>
+                        <div>{parse(item.thiller)}</div>
                         <img src={item.movie_cover} alt="movie_cover_img"/>
                         <div>{item.mylist}</div>
                     </div>

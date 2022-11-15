@@ -7,3 +7,22 @@
 .nav-link{
   color: black !important;
 }
+.carol-img{
+	height: 430px; 
+	background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+	.carol-img{
+		height: 296px!important;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.carol-img{
+		height: 236px!important;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.carol-img{
+		height: 200px!important;
+	}
+}

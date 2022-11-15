@@ -32,7 +32,7 @@ function Navbar() {
                                 <Link className="nav-link" to={'/faqs'}>FAQs</Link>
                             </li>
                         </ul>
-                        <div className="d-flex d-grid gap-1 col-2 mx-auto px-4">
+                        <div className="d-flex d-grid gap-1 col-2 justify-content-end px-3">
                             <button type="button" className="btn btn-warning ">Sign Up</button>
                             <button type="button" className="btn btn-warning ">Sign In</button>
                         </div>

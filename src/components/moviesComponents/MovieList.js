@@ -68,7 +68,7 @@ function MovieList() {
                     </button>
                 </div>
             </section>
-
+            
             {movies.map((item) =>
                 <div className="container" key={item.id}>
                     <div>{item.id}</div>

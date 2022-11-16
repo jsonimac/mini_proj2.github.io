@@ -41,7 +41,7 @@ function MovieList() {
                                 <img src="http://localhost:9000/images/movies/movie_rednotice.jpg" className="carol-img d-block w-100" alt="..."/>
                             </div>
                             </div>
-                            
+                            Jessie Changes 2
                         </div>
                         {/* <div className="carousel-item">
                             <img src="http://localhost:9000/images/movies/movie_rednotice.jpg" className="carol-img d-block w-100" alt="..."/>

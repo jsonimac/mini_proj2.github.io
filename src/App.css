@@ -1,6 +1,34 @@
+body::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+	background: #d0d0d0;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+	background-color: gray;    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 3px solid #cdcdcd;  /* creates padding around scroll thumb */
+}
 .nav-shadow{
 	box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
 	
+}
+.bi-arrow-right-short, .bi-arrow-left-short .bi-volume-mute-fill{
+	color: black;
+}
+.remove_border{
+	text-decoration: none!important;
+}
+.card-style{
+	border-radius: 20px!important;
+}
+.img-style{
+	height: 390px !important;
+}
+.fs-6 {
+    font-size: 1.1rem!important;
 }
 .nav-style{
 	background: rgba(255, 255, 255, 0.7);

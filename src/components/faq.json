@@ -1,0 +1,17 @@
+[
+    {
+     "id": 1,
+     "question": "What are the services do you offer",
+     "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis vitae tempora quod provident tenetur culpa dolore facere? Earum, dolor?"
+    },
+    {
+     "id": 2,
+     "question": "Do you offer subscriptions",
+     "answer": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam"
+    },
+    {
+     "id": 3,
+     "question": "Can I watch the video offline",
+     "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores,"
+    }
+   ]

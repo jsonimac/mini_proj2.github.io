@@ -17,6 +17,7 @@ Column,
 FooterLink,
 Heading,
 } from "./FooterStyles";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
 return (
@@ -31,15 +32,14 @@ return (
 				<Row>
 				<Column>
 					<Heading>About Us</Heading>
-					<FooterLink href="#">Vision</FooterLink>
-					<FooterLink href="#">Testimonials</FooterLink>
+					<FooterLink href="./about">About CornFlix</FooterLink>
 				</Column>
 				<Column>
 					<Heading>Links</Heading>
-					<FooterLink href="#">Movies</FooterLink>
-					<FooterLink href="#">Tvshow</FooterLink>
-					<FooterLink href="#">Mylist</FooterLink>
-					<FooterLink href="#">About</FooterLink>
+					<FooterLink href="./movies">Movies</FooterLink>
+					<FooterLink href="./tvshow">Tvshow</FooterLink>
+					<FooterLink href="./mylist">Mylist</FooterLink>
+                    <FooterLink href="./faqs">FAQs</FooterLink>
 				</Column>
 				<Column>
 					<Heading>Contact Us</Heading>
@@ -52,28 +52,28 @@ return (
 					<FooterLink href="#">
 					<i className="fab fa-facebook-f">
 						<span style={{ marginLeft: "10px" }}>
-						Facebook
+						<FaFacebookF /> - Facebook
 						</span>
 					</i>
 					</FooterLink>
 					<FooterLink href="#">
 					<i className="fab fa-instagram">
 						<span style={{ marginLeft: "10px" }}>
-						Instagram
+						<FaInstagram /> - Instagram
 						</span>
 					</i>
 					</FooterLink>
 					<FooterLink href="#">
 					<i className="fab fa-twitter">
 						<span style={{ marginLeft: "10px" }}>
-						Twitter
+						<FaTwitter /> - Twitter
 						</span>
 					</i>
 					</FooterLink>
 					<FooterLink href="#">
 					<i className="fab fa-youtube">
 						<span style={{ marginLeft: "10px" }}>
-						Youtube
+						<FaYoutube /> - Youtube
 						</span>
 					</i>
 					</FooterLink>

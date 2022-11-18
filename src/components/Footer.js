@@ -1,9 +1,85 @@
-function Footer() {
-    return (
-        <div className="container">
-            <h2>This is Footer</h2>
-        </div>
-    );
-}
+// function Footer() {
+//     return (
+//         <div className="container">
+//             <h2>This is Footer</h2>
+//         </div>
+//     );
+// }
 
+// export default Footer;
+
+import React from "react";
+import {
+Box,
+Container,
+Row,
+Column,
+FooterLink,
+Heading,
+} from "./FooterStyles";
+
+const Footer = () => {
+return (
+	<Box>
+	<h1 style={{ color: "white",
+				textAlign: "center",
+				marginTop: "-50px" }}>
+		CornFlix: Just Watch and Chill
+	</h1>
+	<Container>
+		<Row>
+		<Column>
+			<Heading>About Us</Heading>
+			<FooterLink href="#">Vision</FooterLink>
+			<FooterLink href="#">Testimonials</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Links</Heading>
+			<FooterLink href="#">Movies</FooterLink>
+			<FooterLink href="#">Tvshow</FooterLink>
+			<FooterLink href="#">Mylist</FooterLink>
+			<FooterLink href="#">About</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Contact Us</Heading>
+			<FooterLink href="#">JC</FooterLink>
+			<FooterLink href="#">Clyde</FooterLink>
+			<FooterLink href="#">Anthony</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Social Media</Heading>
+			<FooterLink href="#">
+			<i className="fab fa-facebook-f">
+				<span style={{ marginLeft: "10px" }}>
+				Facebook
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-instagram">
+				<span style={{ marginLeft: "10px" }}>
+				Instagram
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-twitter">
+				<span style={{ marginLeft: "10px" }}>
+				Twitter
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-youtube">
+				<span style={{ marginLeft: "10px" }}>
+				Youtube
+				</span>
+			</i>
+			</FooterLink>
+		</Column>
+		</Row>
+	</Container>
+	</Box>
+);
+};
 export default Footer;

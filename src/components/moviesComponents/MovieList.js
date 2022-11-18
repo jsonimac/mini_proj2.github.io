@@ -2,6 +2,7 @@ import parse from 'html-react-parser';
 import ApiService from "../../Apis/ApiService";
 import useFetch from "../../Apis/useFetch";
 import Modal from './Modal';
+import Footer from '../Footer';
 
 function MovieList() {
     const apiPath = ApiService();

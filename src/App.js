@@ -7,10 +7,10 @@ import Home from './components/Home';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Movies from './components/Movies';
-import Footer from './components/Footer';
 import Tvshow from './components/Tvshow';
 import Mylist from './components/Mylist';
 import Faqs from './components/Faqs';
+import Footer from './components/Footer';
 function App() {
   return (
     <>

@@ -116,7 +116,7 @@ const Home = () => {
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5">
-                        <img src="cornflix.jpg" alt="image of the artist"/>
+                        <img src="cornflix.jpg" alt="image_of_the_artist"/>
                     </div>
                     <div class="col-lg-5 offset-lg-1">
                         <h6 class="display-2">About</h6>

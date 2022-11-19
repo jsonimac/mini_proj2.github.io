@@ -2,7 +2,6 @@ import parse from 'html-react-parser';
 import ApiService from "../../Apis/ApiService";
 import useFetch from "../../Apis/useFetch";
 import Modal from './Modal';
-import Footer from '../Footer';
 
 function MovieList() {
     const apiPath = ApiService();
@@ -30,7 +29,7 @@ function MovieList() {
                                 <img src="http://localhost:9000/images/movies/movie_rednotice.jpg" className="carol-img d-block w-100" alt="..."/>
                             </div>
                             </div>
-                        eqweeeeeeeeeeerjqrhiqwkeqwejqw
+                            Jessie Changes 2 Bisag Unsa
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

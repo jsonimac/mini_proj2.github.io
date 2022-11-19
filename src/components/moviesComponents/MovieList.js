@@ -10,7 +10,7 @@ function MovieList() {
     return (
         <>
         
-            <h5>Movie List</h5>
+            <h2 className="text-warning text-center display-3 movie-header my-5">Movies</h2>
             {/* <section>
                 <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-bs-ride="true">
                     <div className="carousel-inner">
@@ -55,7 +55,7 @@ function MovieList() {
                 <div key={item.id}>
                     <div className='col'>
                         <div type="button" data-bs-toggle="modal" data-bs-target={"#exampleModal" + item.id}>
-                            <div className="card h-100 card-style" >
+                            <div className="card h-75 card-style" >
                                 <img src={apiPath + item.movie_cover} className="card-img img-style" alt="movie_cover_photo"/>
                             </div>
                             <div className='d-flex justify-content-center mt-1'>
@@ -63,7 +63,16 @@ function MovieList() {
                             </div>
                         </div>
                     </div>
-                    <Modal id={item.id} title={item.title} trailer={parse(item.thriller)}/>
+                    <Modal 
+                        id={item.id} 
+                        title={item.title} 
+                        trailer={parse(item.thriller)} 
+                        movie_cover={apiPath + item.movie_cover} 
+                        summary={item.summary}
+                        category={item.category}
+                        year={item.year}
+                    />
+
                 </div>
             )}
             </div>

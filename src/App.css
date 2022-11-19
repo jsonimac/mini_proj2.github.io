@@ -29,9 +29,11 @@ body::-webkit-scrollbar-thumb {
 }
 .card-style{
 	border-radius: 20px!important;
+	background-image: cover;
 }
 .img-style{
-	height: 390px !important;
+	height: 320px !important;
+	position: relative;
 }
 .fs-6 {
     font-size: 1.1rem!important;
@@ -82,9 +84,8 @@ section{
 	font-weight: 600;
   }
 
-
-#movies h2 {
-	font-weight: 700;
+#movies h2, .movie-header {
+	font-weight: 700 !important;
 	border-bottom: 3px solid gray;
 	padding: 0px;
 }

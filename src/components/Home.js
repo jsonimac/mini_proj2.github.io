@@ -16,7 +16,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-             </section>
+            </section>
              <div className="container-fluid">
              <section id="movies">
                 <h2 className="text-warning text-center display-3">Movies</h2>

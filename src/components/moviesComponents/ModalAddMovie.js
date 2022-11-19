@@ -9,11 +9,25 @@ function ModalAddMovie(props) {
         const value = event.target.value;
         setMovie({...movie, [names]: value});
     }
+    
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(movie);
+        let id = movie.id;
+        let method = id > 0 ? 'PUT' : 'POST';
+        fetch("http://localhost:9000/employees/" + id, 
+        {method: method, 
+        body: JSON.stringify(movie),
+        headers:{'Content-type': 'application/json; charset=UTF-8',},
+        })
+        .then(response => response.json())
+        .then(data => {
+            setMovie(data);
+        })
+        .catch((err) => {
+            console.log(err.message);
+        });
     }
-
 
     return (
         <>

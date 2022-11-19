@@ -1,8 +1,10 @@
+import TvshowList from "./tvshowComponents/TvshowList";
+
 function Tvshow() {
     return (
         <>
         <div className="container">
-            <h2>This is list of tvshows</h2>
+            <TvshowList />
         </div>
             
         </>

@@ -1,4 +1,6 @@
-function Modal(prop) {
+import React from 'react';
+
+function TvshowMylist(prop) {
     return (
         <>
             <div className="modal fade" id={"exampleModal" + prop.id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -32,7 +34,6 @@ function Modal(prop) {
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Add to Mylist</button>
-                            <button type="button" className="btn btn-success">Update</button>
                         </div>
                     </div>
                 </div>
@@ -41,4 +42,4 @@ function Modal(prop) {
     );
 }
 
-export default Modal;
+export default TvshowMylist;

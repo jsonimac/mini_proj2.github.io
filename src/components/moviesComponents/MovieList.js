@@ -1,23 +1,17 @@
+import React from 'react';
 import parse from 'html-react-parser';
 import ApiService from "../../Apis/ApiService";
 import useFetch from "../../Apis/useFetch";
-import ModalAddMovie from './ModalAddMovie';
 import ModalAddMyList from './ModalAddMyList';
 
 function MovieList() {
     const apiPath = ApiService();
     const [movies] = useFetch(apiPath + "movies");
-    const modalTrig = "AddMovie";
-    
     return (
         <>
         
             <h2 className="text-warning text-center display-3 movie-header my-5">Movies</h2>
 
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target={"#"+modalTrig}>
-            Launch demo modal
-            </button>
-            <ModalAddMovie modaltrig={modalTrig}/>
             {/* <section>
                 <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-bs-ride="true">
                     <div className="carousel-inner">
@@ -79,6 +73,7 @@ function MovieList() {
                         summary={item.summary}
                         category={item.category}
                         year={item.year}
+                        mylist={item.mylist}
                     />
 
                 </div>

@@ -32,6 +32,7 @@ function TvshowList() {
                         summary={item.summary}
                         category={item.category}
                         year={item.year}
+                        mylist={item.mylist}
                     />
 
                 </div>

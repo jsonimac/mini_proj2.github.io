@@ -26,9 +26,6 @@ function Navbar() {
                                 <Link className="nav-link" to={'/mylist'}>My List</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to={'/about'}>About</Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link className="nav-link" to={'/faqs'}>FAQs</Link>
                             </li>
                         </ul>

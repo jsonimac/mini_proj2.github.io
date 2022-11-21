@@ -27,7 +27,7 @@ function ModalAddMyList(props) {
         .then(data => {
             console.log({message: "succesfully added to mylist"});
             if(check === true){
-                setStatus({message: "All Ready Added To"});
+                setStatus({message: "All Ready Added To Mylist"});
             }else{
                 setStatus({message: "Not Included To Mylist"});
             }

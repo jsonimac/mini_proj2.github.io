@@ -6,6 +6,7 @@ import Carousel from 'react-elastic-carousel';
 const Home = () => {
     const apiPath = ApiService();
     const [movies] = useFetch(apiPath + "movies");
+    const [tvshows] = useFetch(apiPath + "tvshows");
     return (
         <div className="container-fluid">
             <section id="banner" className="banner">
@@ -25,30 +26,37 @@ const Home = () => {
             </section>
             <div className="container-fluid">
                 <section id="movies">
-                    <h2 className="text-warning text-center display-3">Movies</h2>
+                    <h2 className="text-warning text-center display-3 mb-5">Movies</h2>
 
-                    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
+                    <Carousel itemsToShow={4}>
+                        {movies && movies.map((item) =>
+                            <>
+                                <div class="card" style={{width: "18rem"}} key={item.id}>
+                                <img src={apiPath + item.movie_cover} class="card-img-top" alt="..."/>
+                                </div>
+                            </>
+                        )}
+                    </Carousel>
                 </section>
             </div>
 
-            <Carousel itemsToShow={4}>
-                {movies && movies.map((item) =>
-                    <>
-                        <div class="card" style={{width: "18rem"}} key={item.id}>
-                        <img src={apiPath + item.movie_cover} class="card-img-top" alt="..."/>
-                        </div>
-                    </>
-                )}
-            </Carousel>
+            <div className="container-fluid">
+                <section id="movies">
+                    <h2 className="text-warning text-center display-3 mb-5">Tvshows</h2>
+
+                    <Carousel itemsToShow={4}>
+                        {tvshows && tvshows.map((item) =>
+                            <>
+                                <div class="card" style={{width: "18rem"}} key={item.id}>
+                                <img src={apiPath + item.movie_cover} class="card-img-top" alt="..."/>
+                                </div>
+                            </>
+                        )}
+                    </Carousel>
+                </section>
+            </div>
+
+            
         
              <section id="about">
                 <div className="container">

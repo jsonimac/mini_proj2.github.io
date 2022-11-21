@@ -95,9 +95,9 @@ section{
 
 }
 
-.carol-img{
-	height: 430px; 
-	background-size: cover;
+.card-img-top{
+	height: 400px !important; 
+	background-size: cover !important;
 }
 .carousel-control-prev {
     left: -30px !important;

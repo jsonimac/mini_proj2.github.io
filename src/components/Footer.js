@@ -22,11 +22,12 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 const Footer = () => {
 return (
 		<Box>
-			<h1 style={{ color: "black",
+			<h2 style={{ color: "black",
 						textAlign: "center",
-						marginTop: "-50px" }}>
+						marginTop: "-50px" ,
+						fontSize: "20px" }}>
 				CornFlix: Just Watch and Chill
-			</h1>
+			</h2>
 			<Container>
 				<Row>
 				<Column>

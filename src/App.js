@@ -2,6 +2,7 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
 
+
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';

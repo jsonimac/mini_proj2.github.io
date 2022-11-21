@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-padding: 80px 60px;
+padding: 80px 40px;
 background: #f2f2f2;
 bottom: 0;
 width: 100%;
@@ -16,8 +16,9 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 1000px;
+	max-width: 999px;
 	margin: 0 auto;
+	margin-bottom: 2px;
 	/* background: red; */
 `
 
@@ -42,8 +43,8 @@ grid-gap: 20px;
 
 export const FooterLink = styled.a`
 color: black;
-margin-bottom: 20px;
-font-size: 24px;
+margin-bottom:10px;
+font-size: 15px;
 text-decoration: none;
 
 &:hover {
@@ -53,8 +54,8 @@ text-decoration: none;
 `;
 
 export const Heading = styled.p`
-font-size: 24px;
+font-size: 17px;
 color: #black;
-margin-bottom: 40px;
+margin-top: 20px;
 font-weight: bold;
 `;

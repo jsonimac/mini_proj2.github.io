@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
 `;
 export const Entity = styled.div`
-  color: yellow;
+  color: #ffc107;
   border: 1px solid #070707;
   max-width: 690px;
   width: 99%;

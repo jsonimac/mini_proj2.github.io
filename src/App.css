@@ -95,8 +95,6 @@ section{
 
 }
 
-
-
 .carol-img{
 	height: 430px; 
 	background-size: cover;
@@ -133,11 +131,11 @@ section{
 	.carousel-inner {
 		display: flex !important;
 	}
-	.carousel-item {
+	/* .carousel-item {
 		display: block !important;
 		margin-right: 0 !important;
 		flex: 0 0 calc(100% / 3) !important;
-	}
+	} */
 }
 
 .carousel-inner {

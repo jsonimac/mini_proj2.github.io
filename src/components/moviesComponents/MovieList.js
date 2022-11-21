@@ -1,16 +1,17 @@
+import React from 'react';
 import parse from 'html-react-parser';
 import ApiService from "../../Apis/ApiService";
 import useFetch from "../../Apis/useFetch";
-import Modal from './Modal';
+import ModalAddMyList from './ModalAddMyList';
 
 function MovieList() {
     const apiPath = ApiService();
     const [movies] = useFetch(apiPath + "movies");
-    
     return (
         <>
         
             <h2 className="text-warning text-center display-3 movie-header my-5">Movies</h2>
+
             {/* <section>
                 <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-bs-ride="true">
                     <div className="carousel-inner">
@@ -50,6 +51,7 @@ function MovieList() {
                     </button>
                 </div>
             </section> */}
+
             <div className='row row-cols-2 row-cols-lg-5 row-cols-md-3 g-4'>
             {movies && movies.map((item) =>
                 <div key={item.id}>
@@ -63,7 +65,7 @@ function MovieList() {
                             </div>
                         </div>
                     </div>
-                    <Modal 
+                    <ModalAddMyList 
                         id={item.id} 
                         title={item.title} 
                         trailer={parse(item.thriller)} 
@@ -71,6 +73,7 @@ function MovieList() {
                         summary={item.summary}
                         category={item.category}
                         year={item.year}
+                        mylist={item.mylist}
                     />
 
                 </div>

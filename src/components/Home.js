@@ -2,7 +2,6 @@ import React from 'react';
 import ApiService from '../Apis/ApiService';
 import useFetch from '../Apis/useFetch';
 import Carousel from 'react-elastic-carousel';
-import Item from '../Item';
 
 const Home = () => {
     const apiPath = ApiService();

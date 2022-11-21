@@ -7,14 +7,10 @@ function ModalAddMyList(props) {
     const [status, setStatus] = useState(
         {
             status: props.mylist,
-            message: "Not Included To Mylist"
+            message: "Not Included To Mylist",
+
         }
     );
-    // if(props.mylist){
-    //     setStatus("Already added to list");
-    // }else{
-    //     setStatus("Not yet added to list");
-    // }
     const onCheck = () => {
         setCheck(!check);
     }
@@ -30,7 +26,12 @@ function ModalAddMyList(props) {
         .then(response => response.json())
         .then(data => {
             console.log({message: "succesfully added to mylist"});
-            setStatus({message: "All Ready Added To"})
+            if(check === true){
+                setStatus({message: "All Ready Added To"});
+            }else{
+                setStatus({message: "Not Included To Mylist"});
+            }
+            
         })
         .catch((err) => {
             console.log(err.message);
@@ -76,7 +77,7 @@ function ModalAddMyList(props) {
                                 </div>
                                 <div>
                                     <input onChange={onCheck} className="form-check-input mt-3 mx-3" type="checkbox" placeholder="Checkbox for following text input"/>
-                                    <button type="submit" className="btn btn-primary" data-bs-dismiss="modal" disabled={!check}>Add to Mylist</button>
+                                    <button type="submit" className={"btn btn-" + (check ? 'primary':'danger')} data-bs-dismiss="modal" >{check ? 'Add to Mylist' : 'Remove to Mylist'}</button>
                                 </div>
                                 
                             </div>

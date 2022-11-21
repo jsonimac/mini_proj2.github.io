@@ -1,5 +1,12 @@
+import React from 'react';
+import ApiService from '../Apis/ApiService';
+import useFetch from '../Apis/useFetch';
+import Carousel from 'react-elastic-carousel';
+import Item from '../Item';
 
 const Home = () => {
+    const apiPath = ApiService();
+    const [movies] = useFetch(apiPath + "movies");
     return (
         <div className="container-fluid">
             <section id="banner" className="banner">
@@ -20,6 +27,7 @@ const Home = () => {
              <div className="container-fluid">
              <section id="movies">
                 <h2 className="text-warning text-center display-3">Movies</h2>
+                
                 <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -107,10 +115,24 @@ const Home = () => {
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
                     </button>
-                    </div>
+                </div>
     
                       
              </section>
+            
+            <Carousel itemsToShow={4}>
+                {movies && movies.map((item) =>
+                    <>
+                        <div class="card" style={{width: "18rem"}} key={item.id}>
+                        <img src={apiPath + item.movie_cover} class="card-img-top" alt="..."/>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        </div>
+                    </>
+                )}
+            </Carousel>
 
              <section id="about">
             <div className="container">

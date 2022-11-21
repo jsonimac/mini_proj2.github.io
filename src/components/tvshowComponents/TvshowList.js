@@ -6,7 +6,7 @@ import TvshowMylist from './TvshowMylist';
 
 function TvshowList() {
     const apiPath = ApiService();
-    const [tvshow] = useFetch(apiPath + "tvshow");
+    const [tvshow] = useFetch(apiPath + "tvshows");
 
     return (
         <>
